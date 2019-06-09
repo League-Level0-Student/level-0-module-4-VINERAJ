@@ -33,11 +33,22 @@ void draw(){
  if(Xval>350){
    Xval=345;
  }
- if(Yval<320){
+ if(Yval<340){
   Yval=340; 
  }
  if(Yval>360){
-   Yval=360;
+   Yval=370;
  }
-  
+ if(Xval2<535){
+   Xval2=540;
+ }
+ if(Xval2>565){
+   Xval2=560;
+ }
+ if(Yval2<350){
+   Yval2=355;
+ }
+ if(Yval2>380){
+   Yval2=375;
+ }
 }
