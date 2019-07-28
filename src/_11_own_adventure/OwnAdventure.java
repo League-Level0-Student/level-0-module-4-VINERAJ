@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	JOptionPane.showMessageDialog(null, "Welcome to the jungle, traveller.");
 	String name = JOptionPane.showInputDialog("What is your name?");
 	JOptionPane.showMessageDialog(null, "Welcome, " + name + ".");
-	JOptionPane.showMessageDialog(null, "You have come to the jungles of paIfdsjpoiajEopmvcae0rwv8au 99992-v to fond a mystical artifact known as the Heart of the Jungle.");
+	JOptionPane.showMessageDialog(null, "You have come to the jungles of paIfdsjpoiajEopmvcae0rwv8au 99992-v to find a mystical artifact known as the Heart of the Jungle.");
 	JOptionPane.showMessageDialog(null, "Soon, you come to crossroads. You can go left, straight, right, and backwards. Where do you want to go?");
 	String oneCross = JOptionPane.showInputDialog("Respond L/S/R/B.");
 	if(oneCross.equalsIgnoreCase("L")) {
@@ -84,6 +84,24 @@ public static void main(String[] args) {
 			String fiveCross = JOptionPane.showInputDialog("Respond Y/N");
 			if(fiveCross.equalsIgnoreCase("Y")) {
 				JOptionPane.showMessageDialog(null, "You open it and find a map inside. It leads to the Heart of the Jungle. You decide to follow it");
+				JOptionPane.showMessageDialog(null, "You go inside a maze, and you find a monster inside it. Do you want to shoot it or follow the instructions on the map?");
+				String nineCross = JOptionPane.showInputDialog("Respond S/F");
+				if(nineCross.equalsIgnoreCase("S")) {
+					JOptionPane.showMessageDialog(null, "The monster eats you and you die.");
+					JOptionPane.showMessageDialog(null, "Farewell, " + name + ".");
+					System.exit(0);
+				}
+				else if(nineCross.equalsIgnoreCase("F")) {
+					JOptionPane.showMessageDialog(null, "You are  surrounded by plot armour and punch the monster. It explodes, and you continue your journey.");
+					JOptionPane.showMessageDialog(null, "After a while, you come to the center of the maze and find the Heart of the Jungle.");
+					JOptionPane.showMessageDialog(null, "YOU WIN!!!!!!!");
+					JOptionPane.showMessageDialog(null, "Farewell, " + name + ".");
+					System.exit(0);
+				}
+				else {
+					JOptionPane.showMessageDialog(null, "Answer not accepted, please restart");
+					System.exit(0);
+				}
 			}
 			else if(fiveCross.equalsIgnoreCase("N")) {
 				JOptionPane.showMessageDialog(null, "As you throw the cylinder aside, it hits an anthill and the giant ants inside it swarm out.");
@@ -94,7 +112,15 @@ public static void main(String[] args) {
 					JOptionPane.showMessageDialog(null, "Farewell, " + name + ".");
 					System.exit(0);
 				}
-				else if(eightCross.equalsIgnoreCase("S"))
+				else if(eightCross.equalsIgnoreCase("S")) {
+					JOptionPane.showMessageDialog(null, "The ants overwhelm you and you die.");
+					JOptionPane.showMessageDialog(null, "Farewell, " + name + ".");
+					System.exit(0);
+				}
+				else {
+					JOptionPane.showMessageDialog(null, "Answer not accepted, please restart");
+					System.exit(0);
+				}
 			}
 		}
 		else {
